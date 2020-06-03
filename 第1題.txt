@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class main{
+	public static void main(String args[]){
+		Scanner sc=new Scanner(System.in);
+		String str[]=sc.nextLine().split(" ");
+		StringBuffer sbuffer2 = new StringBuffer();
+		for(int i=0 ; i<str.length ; i++){
+				StringBuffer sbuffer1 = new StringBuffer(str[i]);
+				sbuffer1.reverse();
+				sbuffer2.append(sbuffer1);
+				if(i!=str.length-1){
+					sbuffer2.append(" ");
+				}
+		}
+		
+		System.out.println(sbuffer2);
+		
+	}
+}
